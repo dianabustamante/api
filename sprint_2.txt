@@ -1,0 +1,18 @@
+Recurso N° 1: Añadir productos
+URL: http://localhost:8080/nja/api/v1/productos
+VERBO: POST
+CONSUME: {"id":0,"nombre":"Ultimate XD","marca":"Adidas","precio":34.4,"categoria":"Zapatos","cantidad":50,"imagen":"Adidas3.jpg","edad":22,"genero":femenino,"activo":"S"}
+PRODUCE: JSON {"id":0,"nombre":"Ultimate XD","marca":"Adidas","precio":34.4,"categoria":"Zapatos","cantidad":50,"imagen":"Adidas3.jpg","edad":22,"genero":femenino,"activo":"S"}
+
+
+Recurso N° 2: Añadir productos
+URL: http://localhost:8080/nja/api/v1/productos
+VERBO: DEL
+CONSUME: {"id":3,"nombre":"Adidos","marca":"Adidas","precio":34.4,"categoria":"Zapatos","cantidad":1,imagen":"Adidas3.jpg","edad": 22,"genero": "femenino","activo
+PRODUCE:
+
+Recurso N° 4: Añadir productos
+URL: http://localhost:8080/nja/api/v1/productos
+VERBO: GET
+CONSUME:
+PRODUCE: JSON {"id":2,"nombre":"Adidas 2","marca":"NJA","precio":34.4,"categoria":"Zapatos","cantidad":1,"imagen":"femenino","edad":null,"genero":null,"activo":"S"}
