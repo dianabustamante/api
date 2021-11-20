@@ -3,16 +3,27 @@ URL: http://localhost:8080/nja/api/v1/productos
 VERBO: POST
 CONSUME: {"id":0,"nombre":"Ultimate XD","marca":"Adidas","precio":34.4,"categoria":"Zapatos","cantidad":50,"imagen":"Adidas3.jpg","edad":22,"genero":femenino,"activo":"S"}
 PRODUCE: JSON {"id":0,"nombre":"Ultimate XD","marca":"Adidas","precio":34.4,"categoria":"Zapatos","cantidad":50,"imagen":"Adidas3.jpg","edad":22,"genero":femenino,"activo":"S"}
+Onservacion: El objeto de respuesta es el mismo de la entrada pero con un ID asignado desde la bd.
 
 
-Recurso N° 2: Añadir productos
+Recurso N° 2: Actualizar producto
 URL: http://localhost:8080/nja/api/v1/productos
-VERBO: DEL
-CONSUME: {"id":3,"nombre":"Adidos","marca":"Adidas","precio":34.4,"categoria":"Zapatos","cantidad":1,imagen":"Adidas3.jpg","edad": 22,"genero": "femenino","activo
-PRODUCE:
+VERBO: PUT
+Consume: Json con novedades sobre producto {"id":2, "nombre":"Adidos", "marca":"Adidas", "precio":34.4, "categoria":"Zapatos", "cantidad":1,"imagen":"Adidas3.jpg", "edad": 22, "genero": "femenino", "activo": "S"}
+Produce: {"texto":"ERROR"}
+Observacion: El mensaje indica que se realizo con exito la actualizacion
 
-Recurso N° 4: Añadir productos
+
+Recurso N° 3: Eliminar productos
+URL: http://localhost:8080/nja/api/v1/productos/3
+VERBO: DEL
+CONSUME: 
+PRODUCE: {"texto":"ERROR"}
+Observacion: Confirma que se efectuo con exito la solicitud
+
+
+Recurso N° 4: Obtener productos
 URL: http://localhost:8080/nja/api/v1/productos
 VERBO: GET
 CONSUME:
-PRODUCE: JSON {"id":2,"nombre":"Adidas 2","marca":"NJA","precio":34.4,"categoria":"Zapatos","cantidad":1,"imagen":"femenino","edad":null,"genero":null,"activo":"S"}
+PRODUCE: JSON de compra {"id":2,"nombre":"Adidas 2","marca":"NJA","precio":34.4,"categoria":"Zapatos","cantidad":1,"imagen":"femenino","edad":null,"genero":null,"activo":"S"}
